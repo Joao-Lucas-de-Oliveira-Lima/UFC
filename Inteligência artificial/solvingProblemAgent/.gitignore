@@ -1,2 +1,2 @@
-java/src/exec/*.class
+*.class
 .vscode
