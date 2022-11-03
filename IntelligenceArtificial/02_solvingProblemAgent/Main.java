@@ -41,7 +41,7 @@ public class Main {
         //System.out.print("\nEnter the target state: ");
         //String destination = reader.nextLine();
         //Search in width result
-        Solution solution = searchInWidth.performSearch(romaniaMap, args[0], "destination");
+        Solution solution = searchInWidth.performSearch(romaniaMap, args[0], "Bucharest");
         System.out.println("\nSearch in width: "+solution.toString()+"\n");
         //Uniform cost search result
         //solution = uniformCostSearch.performSearch(romaniaMap, "Arad", destination);
