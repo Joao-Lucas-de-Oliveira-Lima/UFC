@@ -44,11 +44,11 @@ public class Main {
         Solution solution = searchInWidth.performSearch(romaniaMap, "Arad", args[0]);
         System.out.println("\nSearch in width: "+solution.toString()+"\n");
         //Uniform cost search result
-        solution = uniformCostSearch.performSearch(romaniaMap, "Arad", args[0]);
-        System.out.println("Uniform cost search: "+solution.toString()+"\n");
+        //solution = uniformCostSearch.performSearch(romaniaMap, "Arad", args[0]);
+        //System.out.println("Uniform cost search: "+solution.toString()+"\n");
         //Depth search result
-        solution = depthSearch.performSearch(romaniaMap, "Arad", args[0]);
-        System.out.println("Depth search: "+solution.toString());
+        //solution = depthSearch.performSearch(romaniaMap, "Arad", args[0]);
+        //System.out.println("Depth search: "+solution.toString());
         reader.close();
     }
 }
