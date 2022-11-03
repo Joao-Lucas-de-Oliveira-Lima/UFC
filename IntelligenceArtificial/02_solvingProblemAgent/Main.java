@@ -34,21 +34,21 @@ public class Main {
         romaniaMap.initializeAdjacentList("Vaslui", new int[]{142, 92}, new String[]{"Urziceni", "Iasi"});
         romaniaMap.initializeAdjacentList("Iasi", new int[]{92, 87}, new String[]{"Vaslui", "Neamt"});
         romaniaMap.initializeAdjacentList("Neamt", new int[]{87}, new String[]{"Iasi"});
-        //Scanner reader = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
         SearchInWidth searchInWidth = new SearchInWidth();
         UniformCostSearch uniformCostSearch = new UniformCostSearch();
         DepthSearch depthSearch = new DepthSearch();
-        //System.out.print("\nEnter the target state: ");
-        //String destination = reader.nextLine();
+        System.out.print("\nEnter the target state: ");
+        String destination = reader.nextLine();
         //Search in width result
         //Solution solution = searchInWidth.performSearch(romaniaMap, "Arad", destination);
         //System.out.println("\nSearch in width: "+solution.toString()+"\n");
         //Uniform cost search result
-        //solution = uniformCostSearch.performSearch(romaniaMap, "Arad", destination);
-        //System.out.println("Uniform cost search: "+solution.toString()+"\n");
+        Solution solution = uniformCostSearch.performSearch(romaniaMap, "Arad", destination);
+        System.out.println("Uniform cost search: "+solution.toString()+"\n");
         //Depth search result
-        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "bucharest");
-        System.out.println("Depth search: "+solution.toString());
+        //solution = depthSearch.performSearch(romaniaMap, "Arad", destination);
+        //System.out.println("Depth search: "+solution.toString());
         //reader.close();
     }
 }
