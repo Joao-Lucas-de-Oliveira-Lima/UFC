@@ -47,7 +47,7 @@ public class Main {
         //Solution solution = uniformCostSearch.performSearch(romaniaMap, args[0], "Bucharest");
         //System.out.println("Uniform cost search: "+solution.toString()+"\n");
         //Depth search result
-        Solution solution = depthSearch.performSearch(romaniaMap, "Arad", destination);
+        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "Buacharest");
         System.out.println("Depth search: "+solution.toString());
         //reader.close();
     }
