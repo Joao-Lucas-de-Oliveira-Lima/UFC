@@ -49,6 +49,6 @@ public class Main {
         //Depth search result
         //solution = depthSearch.performSearch(romaniaMap, "Arad", destination);
         System.out.println("Depth search: "+solution.toString());
-        reader.close();
+        //reader.close();
     }
 }
