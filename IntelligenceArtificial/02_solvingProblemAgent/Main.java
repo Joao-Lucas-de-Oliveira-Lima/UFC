@@ -41,13 +41,13 @@ public class Main {
         //System.out.print("\nEnter the target state: ");
         //String destination = reader.nextLine();
         //Search in width result
-        //Solution solution = searchInWidth.performSearch(romaniaMap, args[0], "Bucharest");
+        //Solution solution = searchInWidth.performSearch(romaniaMap, "Arad", destination);
         //System.out.println("\nSearch in width: "+solution.toString()+"\n");
         //Uniform cost search result
-        //Solution solution = uniformCostSearch.performSearch(romaniaMap, args[0], "Bucharest");
+        //solution = uniformCostSearch.performSearch(romaniaMap, "Arad", destination);
         //System.out.println("Uniform cost search: "+solution.toString()+"\n");
         //Depth search result
-        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "Buacharest");
+        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "bucharest");
         System.out.println("Depth search: "+solution.toString());
         //reader.close();
     }
