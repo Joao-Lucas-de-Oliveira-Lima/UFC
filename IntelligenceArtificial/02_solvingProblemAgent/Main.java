@@ -44,10 +44,10 @@ public class Main {
         //Solution solution = searchInWidth.performSearch(romaniaMap, args[0], "Bucharest");
         //System.out.println("\nSearch in width: "+solution.toString()+"\n");
         //Uniform cost search result
-        Solution solution = uniformCostSearch.performSearch(romaniaMap, args[0], "Bucharest");
-        System.out.println("Uniform cost search: "+solution.toString()+"\n");
+        //Solution solution = uniformCostSearch.performSearch(romaniaMap, args[0], "Bucharest");
+        //System.out.println("Uniform cost search: "+solution.toString()+"\n");
         //Depth search result
-        //solution = depthSearch.performSearch(romaniaMap, "Arad", destination);
+        Solution solution = depthSearch.performSearch(romaniaMap, "Arad", destination);
         System.out.println("Depth search: "+solution.toString());
         //reader.close();
     }
