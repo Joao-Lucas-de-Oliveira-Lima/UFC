@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
+import src.auxiliarySearchStructures.Solution;
 import src.graph.Map;
-import src.search.DepthSearch;
-import src.search.SearchInWidth;
-import src.search.UniformCostSearch;
-import src.search.dataStructure.Solution;
+import src.searchAlgorithms.DepthSearch;
+import src.searchAlgorithms.SearchInWidth;
+import src.searchAlgorithms.UniformCostSearch;
 
 public class Main {
     public static void main(String[] args){

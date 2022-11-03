@@ -1,13 +1,13 @@
-package src.search;
+package src.searchAlgorithms;
 
 import java.util.ArrayList;
 
+import src.auxiliarySearchStructures.Node;
+import src.auxiliarySearchStructures.PriorityList;
+import src.auxiliarySearchStructures.Solution;
 import src.graph.Map;
 import src.graph.State;
 import src.graph.Transition;
-import src.search.dataStructure.Node;
-import src.search.dataStructure.PriorityList;
-import src.search.dataStructure.Solution;
 
 public class UniformCostSearch{
     private PriorityList edge;

@@ -1,4 +1,4 @@
-package src.search.dataStructure;
+package src.auxiliarySearchStructures;
 
 import src.graph.State;
 

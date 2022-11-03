@@ -1,12 +1,12 @@
-package src.search;
+package src.searchAlgorithms;
 
 import java.util.Stack;
 
+import src.auxiliarySearchStructures.Node;
+import src.auxiliarySearchStructures.Solution;
 import src.graph.Map;
 import src.graph.State;
 import src.graph.Transition;
-import src.search.dataStructure.Node;
-import src.search.dataStructure.Solution;
 
 import java.util.ArrayList;
 
