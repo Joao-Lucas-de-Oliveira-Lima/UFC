@@ -1,6 +1,6 @@
 import src.auxiliarySearchStructures.Solution;
 import src.graph.Map;
-import src.searchAlgorithms.UniformCostSearch;
+import src.searchAlgorithms.DepthSearch;
 
 public class Main {
     public static void main(String[] args){
@@ -30,9 +30,9 @@ public class Main {
         romaniaMap.initializeAdjacentList("Vaslui", new int[]{142, 92}, new String[]{"Urziceni", "Iasi"});
         romaniaMap.initializeAdjacentList("Iasi", new int[]{92, 87}, new String[]{"Vaslui", "Neamt"});
         romaniaMap.initializeAdjacentList("Neamt", new int[]{87}, new String[]{"Iasi"});
-        UniformCostSearch uniformCostSearch = new UniformCostSearch();
-        //Uniform cost search result
-        Solution solution = uniformCostSearch.performSearch(romaniaMap, args[0], "bucharest");
+        DepthSearch depthSearch = new DepthSearch();
+        //Depth search result
+        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "bucharest");
         System.out.println(solution.toString()+"\n");
     }
 }
