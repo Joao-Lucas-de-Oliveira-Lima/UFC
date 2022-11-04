@@ -1,6 +1,6 @@
 import src.auxiliarySearchStructures.Solution;
 import src.graph.Map;
-import src.searchAlgorithms.DepthSearch;
+import src.searchAlgorithms.SearchInWidth;
 
 public class Main {
     public static void main(String[] args){
@@ -30,9 +30,9 @@ public class Main {
         romaniaMap.initializeAdjacentList("Vaslui", new int[]{142, 92}, new String[]{"Urziceni", "Iasi"});
         romaniaMap.initializeAdjacentList("Iasi", new int[]{92, 87}, new String[]{"Vaslui", "Neamt"});
         romaniaMap.initializeAdjacentList("Neamt", new int[]{87}, new String[]{"Iasi"});
-        DepthSearch depthSearch = new DepthSearch();
+        SearchInWidth searchInWidth = new SearchInWidth();
         //Depth search result
-        Solution solution = depthSearch.performSearch(romaniaMap, args[0], "bucharest");
+        Solution solution = searchInWidth.performSearch(romaniaMap, args[0], "bucharest");
         System.out.println(solution.toString()+"\n");
     }
 }
